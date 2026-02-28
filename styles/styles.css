@@ -1,0 +1,72 @@
+/* Page base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Outer container for each section */
+.outer {
+  border: 2px solid #222;
+  padding: 16px;
+  margin: 18px 0;
+}
+
+h1 {
+  margin: 0 0 16px;
+}
+
+h2 {
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+
+/* Flexbox grids */
+.grid {
+  display: flex;
+}
+
+/* Gaps required by the lab */
+.gap-10 { gap: 10px; }
+.gap-12 { gap: 12px; }
+.gap-15 { gap: 15px; }
+
+/* Column counts */
+.grid-2 > .box { flex: 1; }
+.grid-3 > .box { flex: 1; }
+.grid-4 > .box { flex: 1; }
+
+/* Boxes */
+.box {
+  height: 50px;              /* lab requirement */
+  background: #d9f0ff;       /* pick any color */
+  border: 1px solid #1b4d7a; /* pick any color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* For sections that require 2px borders on inner boxes */
+.bordered {
+  border-width: 2px;
+}
+
+/* Unequal columns: first one is double width */
+.double {
+  flex: 2;
+}
+
+/* Footer styling */
+.footer {
+  margin-top: 12px;
+}

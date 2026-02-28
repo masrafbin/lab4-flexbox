@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flexbox Lab</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body>
+  <main class="page">
+    <h1>Flexbox Lab</h1>
+
+    <!-- Two equally sized columns (gap 10px) -->
+    <section class="outer">
+      <h2>Two equally sized columns</h2>
+      <div class="grid grid-2 gap-10">
+        <div class="box">1</div>
+        <div class="box">2</div>
+      </div>
+    </section>
+
+    <!-- Three equally sized columns (gap 15px) -->
+    <section class="outer">
+      <h2>Three equally sized columns</h2>
+      <div class="grid grid-3 gap-15">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+      </div>
+    </section>
+
+    <!-- Three unequal columns (gap 12px, inner border 2px) -->
+    <section class="outer">
+      <h2>Three unequal columns</h2>
+      <div class="grid gap-12">
+        <div class="box bordered double">Double</div>
+        <div class="box bordered">A</div>
+        <div class="box bordered">B</div>
+      </div>
+    </section>
+
+    <!-- Four equally sized columns and a footer (gap 12px, inner border 2px) -->
+    <section class="outer">
+      <h2>Four equally sized columns and a footer</h2>
+      <div class="grid grid-4 gap-12">
+        <div class="box bordered">1</div>
+        <div class="box bordered">2</div>
+        <div class="box bordered">3</div>
+        <div class="box bordered">4</div>
+      </div>
+
+      <footer class="footer box bordered">Footer</footer>
+    </section>
+  </main>
+</body>
+</html>
